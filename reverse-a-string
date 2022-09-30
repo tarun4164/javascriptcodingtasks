@@ -1,0 +1,25 @@
+const inputstr="My name is Tarun Teja"
+
+const inputarray=inputstr.split(" ")
+console.log(inputarray)
+
+const otputarray=inputarray.map((wordstr)=>{
+    const reversearray=[]
+    console.log(wordstr)
+    const letterarray=wordstr.split("")
+    console.log(letterarray.length)
+    
+    for(let i=letterarray.length;i>0;i--){
+        console.log(letterarray)
+        reversearray.push(letterarray[i-1])
+    }
+    console.log(reversearray)
+    const revstrinarray=reversearray.join("")
+    
+    console.log(revstrinarray)
+    return revstrinarray
+    
+})
+
+console.log(otputarray.join(" "))
+
